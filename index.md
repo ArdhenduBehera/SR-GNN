@@ -19,10 +19,10 @@ It is a simple yet effective connection between the image space and feature spac
 using a novel relationaware feature transformation and its refinement via attentional context modeling. High-level CNN features are pooled using geometrically 
 constrained regions of various sizes and positions. These pooled features are transformed using a GNN that captures the visual-spatial relationships via 
 propagating information between regions represented as the nodes of a connected graph to enhance the disriminative power of features.
-![Image](diagram.jpg)
+![Image](High-level.png)
 **High-level illustration of our model (left). The detailed architecture of our novel CAP (right).**
 
-![Image](diagram2.jpg)
+![Image](Model-sr-gnn-low.png)
 **Learning pixel-level relationships from the convolutional feature map of size _W x H x C_. b) CAP using integral regions to capture both self and neighborhood contextual information. c) Encapsulating spatial structure of the integral regions using an LSTM. d) Classification by learnable aggregation of hidden states of the LSTM.**
 
 ### Paper and Supplementary Information
@@ -34,12 +34,14 @@ Extended version of the accepted paper in [ArXiv](https://arxiv.org/abs/2101.066
 
 ### Bibtex
 ```markdown
-@inproceedings{behera2021context,
-  title={Context-aware Attentional Pooling (CAP) for Fine-grained Visual Classification},
-  author={Behera, Ardhendu and Wharton, Zachary and Hewage, Pradeep and Bera, Asish},
-  booktitle={The Thirty-Fifth AAAI Conference on Artificial Intelligence},
-  year={2021},
-  organization={AAAI}
+@article{bera2022sr,
+  title={SR-GNN: Spatial Relation-aware Graph Neural Network for Fine-Grained Image Categorization},
+  author={Bera, Asish and Wharton, Zachary and Liu, Yonghuai and Bessis, Nik and Behera, Ardhendu},
+  journal={IEEE Transactions on Image Processing},
+  year={2022},
+  volume={31},
+  pages={6017-6031},
+  doi={10.1109/TIP.2022.3205215}
 }
 ```
 
