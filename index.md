@@ -20,7 +20,7 @@ using a novel relationaware feature transformation and its refinement via attent
 constrained regions of various sizes and positions. These pooled features are transformed using a GNN that captures the visual-spatial relationships via 
 propagating information between regions represented as the nodes of a connected graph to enhance the disriminative power of features.
 ![Image](High-level.png)
-**High-level illustration of our model (left). The detailed architecture of our novel CAP (right).**
+**High-level illustration of our model (left). The detailed architecture of our novel SR-GNN (right).**
 
 ![Image](Model-sr-gnn-low.png)
 **Learning pixel-level relationships from the convolutional feature map of size _W x H x C_. b) CAP using integral regions to capture both self and neighborhood contextual information. c) Encapsulating spatial structure of the integral regions using an LSTM. d) Classification by learnable aggregation of hidden states of the LSTM.**
