@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: SR-GNN: Spatial Relation-aware Graph Neural Network for Fine-Grained Image Categorization
-description: IEEE Transaction on Image Processing 2022, Vol 31, pp. 6017-6031
+description: IEEE Transaction on Image Processing 2022, Vol. 31, pp. 6017-6031
 github:
   is_project_page: false
