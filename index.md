@@ -19,10 +19,15 @@ It is a simple yet effective connection between the image space and feature spac
 using a novel relationaware feature transformation and its refinement via attentional context modeling. High-level CNN features are pooled using geometrically 
 constrained regions of various sizes and positions. These pooled features are transformed using a GNN that captures the visual-spatial relationships via 
 propagating information between regions represented as the nodes of a connected graph to enhance the disriminative power of features.
-![Image](High-level.png)
+
+<p align="center">
+<img src="High-level.jpg"/>&nbsp;&nbsp;<img src="Model-new.jpg"/>
+
+**High-level illustration of our model
+</p>
+
 **High-level illustration of our model (left). The detailed architecture of our novel SR-GNN (right).**
 
-![Image](Model-sr-gnn-low.png)
 **Learning pixel-level relationships from the convolutional feature map of size _W x H x C_. b) CAP using integral regions to capture both self and neighborhood contextual information. c) Encapsulating spatial structure of the integral regions using an LSTM. d) Classification by learnable aggregation of hidden states of the LSTM.**
 
 ### Paper and Supplementary Information
