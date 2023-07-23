@@ -1,0 +1,4 @@
+opencv                    4.6.0
+tensorflow-gpu            2.10.0
+spektral                  1.2.0
+keras-self-attention      0.51.0

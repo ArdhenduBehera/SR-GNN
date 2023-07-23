@@ -1,0 +1,27 @@
+DATA:
+  nb_classes: 100
+  image_size: [224, 224]
+  dataset_dir: './datasets/Aircraft'
+HARDWARE:
+  multi_gpu: False
+  gpu_id: -1        # CPU : -1 and GPU: 0/1
+  gpu_utilisation: 1
+AUGMENTATION:
+  aug_zoom: 0.15
+  aug_tx: 0
+  aug_ty: 0
+  aug_rotation: 15
+MODEL:
+  batch_size: 16
+  learning_rate: 0.01
+  model_name: 'srgnn' 
+  checkpoint: './TrainedModels/' 
+TRAIN:
+  validation_freq: 5
+  checkpoint_freq: 50
+  epochs: 200
+  alpha_teleport: 0.40 
+  channels: '512_test'
+  learning_rate: 0.01
+WANDB:
+  run_name : 'None'
